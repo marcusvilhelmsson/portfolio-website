@@ -6,17 +6,17 @@
                 <h1 class="text-uppercase headline">Marcus <span class="alternative-text">Vilhelmsson</span></h1>
                 <h2>Software Developer Student</h2>
                 <ul class="social-media-links">
-                    <li><font-awesome-icon class="clickable"
+                    <li><font-awesome-icon class="clickable pop"
                         size="lg"
                         :icon="['fab', 'linkedin']" 
                         @click="goTo('linkedin')"  />
                     </li>
-                    <li><font-awesome-icon class="clickable"
+                    <li><font-awesome-icon class="clickable pop"
                         size="lg"
                         :icon="['fab', 'github']"
                         @click="goTo('github')"  />
                     </li>
-                    <li><font-awesome-icon class="clickable"
+                    <li><font-awesome-icon class="clickable pop"
                         size="lg"
                         :icon="['fas', 'envelope']"
                         @click="goTo('email')"  />
@@ -26,7 +26,7 @@
         </div>
         <div class="right-panel">
             <div class="panel-container">
-                <div class="circle bg-dark">
+                <div class="circle bg-dark pop">
                     <font-awesome-icon :icon="['fas', 'code']" id="code-icon"/>
                 </div>
             </div>
