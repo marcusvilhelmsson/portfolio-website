@@ -1,7 +1,9 @@
 <template>
   <div> 
     <Navigation/>
-    <Home/>
+    <div id="main">
+      <Home/>
+    </div>
   </div>
 </template>
 
