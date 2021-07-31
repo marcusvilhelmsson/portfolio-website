@@ -4,19 +4,3 @@
 @import "./scss/_navbar.scss";
 @import "./scss/_home.scss";
 
-html,
-body {
-  height: 100vh;
-  margin: 0;
-}
-
-#main {
-    width: 100%;
-    height: 100vh;
-}
-
-ul,ol,li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}

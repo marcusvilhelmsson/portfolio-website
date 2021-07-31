@@ -1,5 +1,5 @@
 <template>
-  <div> 
+  <div id="root-container"> 
     <Navigation/>
     <div id="main">
       <Home/>

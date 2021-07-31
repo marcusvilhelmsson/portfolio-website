@@ -3,7 +3,7 @@
         <div class="left-panel">
             <div class="panel-container">
                 <h4 class="text-sm-start">Hi there! I'm</h4>
-                <h1 class="text-uppercase headline">Marcus Vilhelmsson</h1>
+                <h1 class="text-uppercase headline">Marcus <span class="alternative-text">Vilhelmsson</span></h1>
                 <h2>Software Developer Student</h2>
                 <ul class="social-media-links">
                     <li><font-awesome-icon class="clickable"
@@ -35,29 +35,27 @@
 </template>
 
 <script>
-
+import Information from "../mixins/information";
 
 export default {
   name: 'Home',
   components: {},
+  mixins: [Information],
   data: function() {
-      return {
-         linkedInLink: 'https://www.linkedin.com/in/marcus-vilhelmsson-072214184',
-         githubLink: 'https://github.com/marcusvilhelmsson'
-      }
+      return {}
   },
   methods: {
       goTo: function(link){
-          console.log('clicked')
+          const information = this.getContactInformation()
           switch(link){
             case 'linkedin':
-                window.open(this.linkedInLink)
+                window.open(information.linkedInLink)
                 break;
             case 'github':
-                window.open(this.githubLink)
+                window.open(information.githubLink)
                 break;
             case 'email':
-                window.open(this.linkedInLink)
+                window.open(information.mailLink)
                 break;
           }
       }
