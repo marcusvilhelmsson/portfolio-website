@@ -20,27 +20,6 @@
 
                 a {
                     text-decoration: none !important;
-
-                    transition: all 0.3s;
-
-                    
-                    &:before
-                    {
-                        top: 0px;
-                        transform: translateY(-10px);
-                    }
-
-                    &:after
-                    {
-                        bottom: 0px;
-                        transform: translateY(10px);
-                    }
-
-                    &:before,  &:hover:after
-                    {
-                        opacity: 1;
-                        transform: translateY(0px);
-                    }
                 }
                 
                 .router-link-active {
