@@ -6,8 +6,12 @@ body {
 }
 
 #main {
+    background-color: $color-darkgrey;
+    color: $color-white;
+    padding-top: $navigation-height;
     width: auto;
     height: 100%;
+    display: flex;
 }
 
 ul,ol,li {
@@ -16,7 +20,7 @@ ul,ol,li {
   padding: 0;
 }
 
-.clickable:hover{
+.clickable:hover {
     cursor: pointer;
     color: $color-orange;
 }
@@ -30,7 +34,17 @@ ul,ol,li {
 }
 
 .pop:hover {
-    transition-timing-function: ease-out;
-    transition: transform .2s ease; /* Animation */
-    transform: scale(1.1);
+    animation: pulse;
+    animation-duration: 2s;
+}
+
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s ease-out;
 }

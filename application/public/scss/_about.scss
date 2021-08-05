@@ -1,0 +1,23 @@
+.about-container {
+
+    .row{
+        #about-me-header{
+            font-size: $font-size-huge;
+            color: $color-orange;
+        }
+        
+        #portait {
+            border-color: $color-orange;
+            background-color: $color-charcoal;
+            width:100%;
+            height: auto;
+        }
+        .right-panel {
+            background-color: $color-charcoal;
+            border-radius: $border-radius-small;
+
+
+        }
+      
+    }
+}

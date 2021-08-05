@@ -1,0 +1,39 @@
+.footer-container{
+    padding-top: $spacing-large;
+    width: 100%;
+    min-height: 300px;
+    color: $color-white;
+    text-align: center;
+    
+    .footer-header {
+        font-size: $font-size-huge;
+        font-weight: 500;
+    }
+    
+    .divider {
+        margin: $spacing-medium auto;
+        border:1px solid $color-white;
+        max-width: 60px;
+    }
+    
+    .social-media-links {
+        margin: $spacing-large auto;
+        max-width: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        li .icon {
+            font-size: $font-size-mega;
+        }
+    }
+    .footnote {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        vertical-align: bottom;
+
+        .alternative-text {
+            color: $color-orange
+        }
+    }
+}

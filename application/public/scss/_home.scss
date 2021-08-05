@@ -23,7 +23,13 @@
                 .alternative-text {
                     color: $color-orange;
                 }
+
+                &:hover {
+                    animation: rubberBand;
+                    animation-duration: 2s;
+                }
             }
+            
             .social-media-links {
                 * {
                     display: inline-block;
