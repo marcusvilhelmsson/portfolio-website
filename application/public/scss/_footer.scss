@@ -1,10 +1,12 @@
 .footer-container{
     padding-top: $spacing-large;
     width: 100%;
-    min-height: 300px;
+    min-height: 150px;
+    padding: $spacing-large;
     color: $color-white;
     text-align: center;
-    
+    border-radius: $border-radius-huge;
+
     .footer-header {
         font-size: $font-size-huge;
         font-weight: 500;
@@ -17,7 +19,7 @@
     }
     
     .social-media-links {
-        margin: $spacing-large auto;
+        margin: $spacing-huge auto;
         max-width: 400px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -26,11 +28,15 @@
             font-size: $font-size-mega;
         }
     }
+    
     .footnote {
+        margin: $spacing-huge auto;
         height: 100%;
         width: 100%;
         text-align: center;
         vertical-align: bottom;
+        color: $color-grey;
+        font-style: italic;
 
         .alternative-text {
             color: $color-orange

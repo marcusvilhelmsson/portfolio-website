@@ -7,9 +7,11 @@
     display: flex;
     
     .content {
+        
         width: fit-content;
         align-self: center;
         margin: 0 auto;
+        
 
         .list-links {
             display: flex;
@@ -19,11 +21,21 @@
                 margin-right: $spacing-large;
 
                 a {
+                    font-size: $font-size-medium;
                     text-decoration: none !important;
+                    color: $color-white !important;
+                    padding-top: $spacing-small;
+                    padding-bottom: $spacing-small;
+
+                    &:hover {
+                        border-bottom: 2px solid $color-orange;
+                    }
+                    
                 }
                 
                 .router-link-active {
                     color: $color-orange !important;
+                    border-bottom: 2px solid $color-orange;
                 }
             }
             

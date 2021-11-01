@@ -31,9 +31,12 @@
             }
             
             .social-media-links {
-                * {
+                li {
                     display: inline-block;
-                    margin-right: $spacing-medium;
+                    .icon {
+                        margin-right: $spacing-medium;
+                        font-size: $font-size-huge;
+                    }
                 }
             }
         }

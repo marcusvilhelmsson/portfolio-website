@@ -1,14 +1,24 @@
 <template>
   <div class="about-container container justify-content-center">
     <div class="row h-100">
-      <div class="left-panel col-4 my-auto">
-        <img id="portait" src="../../assets/profile.jpeg" alt="portait">
+      <div class="about-me">
+        <div class="about-me-header">About me</div>
+        <p class="about-me-text">Hi, my name is Denise. I am a font & web designer based in Utah. I love playing around with letterforms and hopefully creating something that makes people smile.</p>
       </div>
-      <div class="right-panel col-7 offset-1  my-auto">
-          <h1 id="about-me-header">About me</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum magni impedit voluptates. Natus saepe consectetur pariatur tenetur porro veritatis numquam maiores facere cum. Culpa ipsa minima recusandae officiis ipsam. Expedita?</p>
+
+      <img id="portait" src="../../assets/profile.jpeg" alt="portait">
+
+      <div class="experience">
+          <h1 id="about-me-header">Experience</h1>
+          <div><p>Hi, my name is Denise. I am a font & web designer based in Utah. I love playing around with letterforms and hopefully creating something that makes people smile.</p></div>
+      </div>
+
+      <div class="bottom">
+        <div><p>Hi, my name is Denise. I am a font & web designer based in Utah. I love playing around with letterforms and hopefully creating something that makes people smile.</p></div>
       </div>
     </div>
+
+
   </div>
 </template>
 
@@ -16,6 +26,37 @@
 export default {
   name: 'About',
   components: {
+  },
+  data: function() {
+      return {
+        skill: [
+          {
+            id:1,
+            type:"programmingLang",
+            name:"JavaScript"
+          },
+          {
+            id:2,
+            type:"programmingLang",
+            name:"C#"
+          },
+          {
+            id:3,
+            type:"programmingLang",
+            name:"Java"
+          },
+          {
+            id:4,
+            type:"programmingLang",
+            name:"Java"
+          },
+          {
+            id:5,
+            type:"programmingLang",
+            name:"Kotlin"
+          }
+        ]
+      }
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
-  <div class="footer-container bg-dark">
-    <div class="footer-header">Contact</div>
+  <div class="footer-container">
+    <div class="footer-header">Get in touch with me</div>
     <div class="divider"/>
     <ul class="social-media-links">
         <li><font-awesome-icon class="icon clickable pop"

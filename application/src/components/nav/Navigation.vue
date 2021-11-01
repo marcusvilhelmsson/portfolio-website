@@ -2,10 +2,9 @@
   <div class="nav-container bg-dark">
     <div class="content">
       <ul class="list-links">
-        <li><router-link class="text-white" :to="{name: 'Home'}" data-toggle="collapse" data-target="#navbarToggleExternalContent" >HOME</router-link></li>
-        <li><router-link class="text-white" :to="{name: 'Projects'}" data-toggle="collapse" data-target="#navbarToggleExternalContent">PROJECTS</router-link></li>
-        <li><router-link class="text-white" :to="{name: 'Education'}" data-toggle="collapse" data-target="#navbarToggleExternalContent">EDUCATION</router-link></li>
-        <li><router-link class="text-white" :to="{name: 'About'}" data-toggle="collapse" data-target="#navbarToggleExternalContent">ABOUT ME</router-link></li>
+        <li><router-link :to="{name: 'Home'}" data-toggle="collapse" data-target="#navbarToggleExternalContent" >HOME</router-link></li>
+        <li><router-link :to="{name: 'Portfolio'}" data-toggle="collapse" data-target="#navbarToggleExternalContent">PORTFOLIO</router-link></li>
+        <li><router-link :to="{name: 'About'}" data-toggle="collapse" data-target="#navbarToggleExternalContent">ABOUT ME</router-link></li>
       </ul>
     </div>
   </div>
@@ -17,7 +16,7 @@ import Information from "../mixins/information";
 export default {
   name: 'Navigation',
   components: {},
-  mixins: [Information],
+  mixins: [ Information ],
   data: function() {
       return {}
   },

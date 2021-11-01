@@ -1,0 +1,16 @@
+.portfolio-container {
+
+    .portfolio-items-container {
+
+        #portfolio-items {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: $spacing-large;
+            .item {
+                background-image: url("./img/projects/1/image.png");
+                background-color: blue;
+                height:200px;
+            }
+        }
+    }
+}

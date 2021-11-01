@@ -5,7 +5,7 @@
         <router-view v-slot="{ Component }">
             <transition
               enter-active-class="animate__animated animate__fadeInDown faster"
-              leave-active-class="animate__animated animate__fadeOutDown faster"
+              leave-active-class="animate__animated animate__fadeOutLeft faster"
               mode="out-in">
               <component :is="Component"/>
             </transition>

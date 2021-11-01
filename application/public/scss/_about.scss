@@ -1,22 +1,45 @@
 .about-container {
 
-    .row{
-        #about-me-header{
-            font-size: $font-size-huge;
-            color: $color-orange;
+    .row {
+        margin: $spacing-large;
+        display: grid;
+        grid-template-areas: 
+        "about experience experience"
+        "portait experience experience"
+        "foot foot foot";
+        grid-template-rows: 2fr 4fr 1fr;
+        grid-template-columns: 1fr 4fr;
+        gap: $spacing-medium;
+
+        * {
+            background-color: $color-charcoal;
+            border-radius: $border-radius-medium;
         }
-        
+
         #portait {
-            border-color: $color-orange;
-            background-color: $color-charcoal;
-            width:100%;
-            height: auto;
+            grid-area: portait;
         }
-        .right-panel {
-            background-color: $color-charcoal;
-            border-radius: $border-radius-small;
 
+        .about-me {
+            grid-area: about;
 
+            .about-me-header{
+                font-size: $font-size-huge;
+                color: $color-orange;
+                font-weight: bolder;
+            }
+            
+            .about-me-text{
+                font-size: $font-size-medium;
+            }
+        }
+
+        .experience {
+            grid-area: experience;
+        }
+
+        .bottom{
+            grid-area: foot;
         }
       
     }
